@@ -172,7 +172,6 @@ def main():
         sample_rate=16000,
         chunk_size=8000
     )
-    # censor.load_bad_words("badwords.txt")  # При необходимости загрузить из файла
     censor.bad_words = {"блять", "сука", "нахуй", "один"}
     censor.start()
 
